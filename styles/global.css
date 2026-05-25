@@ -36,3 +36,25 @@ img {
 button {
   font: inherit;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+ 
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
