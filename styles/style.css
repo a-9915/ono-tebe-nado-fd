@@ -1,33 +1,7 @@
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Raleway', sans-serif;
-  background-color: #fff;
-  color: #000;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-address {
-  font-style: normal;
-}
-
 .overlay {
   position: absolute;
   inset: 0;
-  width: 100%;
+  width: 1,100px;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
@@ -35,10 +9,11 @@ address {
 
 
 .header {
-  display: grid; 
+  display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 24px 96px;
+  padding: 92px 50px 96px 50px;
+  width: 100%;
 }
 
 .header-links-list {
@@ -68,36 +43,40 @@ address {
 
 .header-logo {
   display: block;
+  width: 138px;
   justify-self: center;
 }
 
 .header-logo-image {
-  width: 148px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.header-address {
+.address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-self: end;
   font-size: 18px;
-  line-height: 1.35;
+  line-height: 24px;
   margin-right: 25px;
+  font-style: normal;
 }
 
-.header-address a {
+.address a {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.header-address p {
+.address p {
   margin: 0;
 }
 
 
 .cover {
   position: relative;
-  min-height: 745px;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
@@ -105,7 +84,8 @@ address {
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  width: 1,100px;
 }
 
 .cover-title {
@@ -119,31 +99,41 @@ address {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
 }
 
 .text {
   display: block;
   text-align: left;
+  width: 100%;
 }
 
 .text_center {
   display: block;
   text-align: center;
   line-height: 1.2;
+  margin: 0px 95px 0px 65px;
+  margin-top: 20px;
+  margin-left: 20px;
+
 }
 
 .text_right {
   display: block;
   text-align: right;
-  line-height: 1.2;
+  line-height: 70px;
+  margin-left: 25px;
 }
 
 .cover-down {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
   z-index: 2;
-  margin-top: auto;
+  margin-top: 105px;
+  line-height: 28px;
+  word-spacing: 90%;
+
 }
 
 .cover-down-text {
@@ -159,45 +149,50 @@ address {
   background-color: transparent;
   color: #fff;
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   padding: 12px 32px;
   cursor: pointer;
   font-family: inherit;
+  min-width: 256px;
+  min-height: 51px;
+
 }
 
 
 .lots {
-  width: 334;
-  height: 596;
-  padding: 180px 24px 0;
+  width: 100%;
+  margin-top: 180px;
 }
 
 .lots-head {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 0 27px 40px;
+  margin-bottom: 27px ;
+  padding: 0 64px;
 }
 
 .lots-card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  justify-content: center; 
+  justify-content: center;
+  width: 100%;
+  padding: 0 24px;
 }
 
 .lots-card-list-item {
   position: relative;
-  flex-grow: 1;
   width: 334px;
-  min-height: 563px;
+  min-height: 596px;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+  padding: 48px 40px;
+} 
 
 .card-type-f {
   background-image: url(../images/card-lot-01.jpg);
@@ -218,7 +213,9 @@ address {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 48px 40px;
+  font-size: 22px;
+  line-height: 100%;
+  height: 100%;
   color: #fff;
   text-decoration: none;
 }
@@ -229,11 +226,12 @@ address {
   text-decoration: underline;
   text-underline-offset: 5px;
   text-transform: uppercase;
-  margin: 0;
+  
 }
 
 .card-text {
   font-size: 20px;
+  font-weight: 400;
   line-height: 1.2;
   margin: 0;
 }
@@ -249,50 +247,57 @@ address {
 
 
 .btext {
-  display: grid;
+  display: flex;
+  margin-top: auto;
+  font-size: 20px;
   grid-template-columns: 430px 1fr;
   gap: 25px;
-  padding: 180px 24px 0;
+  padding: 180px 50px 0 50px;
+  width: 100%;
 }
 
 .btext-column {
+
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .btext-logo {
-  background-image: url(../images/logo-black.svg);
-  background-color: #000;
-  border-radius: 50%;
-  width: 240px;
-  height: 240px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  margin-top: 152px;
+  margin-left: 71px;
 }
 
 .btext-logo-image {
-  width: 148px;
+   
+  width: 240px;
+  height: 240px;
+   
 }
 
 .btext-title {
+  margin-top: 257px;
+  margin-left: 72px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 0 44px;
+  line-height: 100%;
 }
 
 .btext-text {
+  width: 700px;
+  margin-top: 52px;
+  margin-left: 70px;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
 .btext-text p {
-  margin: 0;
+  margin-left: 0;
+  width: 680px;
 }
 
 
@@ -300,23 +305,19 @@ address {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
-  padding: 180px 50px 88px;
+  padding: 0 50px;
   font-size: 18px;
+  width: 100%;
+  margin-top: 180px;
+  margin-bottom: 82px;
+  gap: 50px;
 }
 
-.footer-address {
+ .address {
   display: flex;
   flex-direction: column;
   line-height: 1.35;
-}
-
-.footer-address a {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.footer-address p {
-  margin: 0;
+  margin-right: 0;
 }
 
 .footer-menu {
@@ -347,6 +348,6 @@ address {
 }
 
 .footer-social-icon {
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
 }
