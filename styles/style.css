@@ -19,7 +19,6 @@
 .header-links-list {
   display: flex;
   gap: 32px;
-  padding-left: 25px;
   font-size: 18px;
   letter-spacing: 0.01em;
 }
@@ -126,7 +125,7 @@
 }
 
 .cover-down {
-  display: block;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 2;
@@ -139,7 +138,6 @@
 .cover-down-text {
   font-size: 22px;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
   word-spacing: 0.5em;
   margin: 0;
 }
@@ -192,6 +190,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 48px 40px;
+  
 } 
 
 .card-type-f {
@@ -224,7 +223,6 @@
   font-size: 22px;
   font-weight: 700;
   text-decoration: underline;
-  text-underline-offset: 5px;
   text-transform: uppercase;
   
 }
@@ -232,7 +230,7 @@
 .card-text {
   font-size: 20px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 120%;
   margin: 0;
 }
 
@@ -260,13 +258,21 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .btext-logo {
-  margin-top: 152px;
-  margin-left: 71px;
+  background-image: url(../images/logo-black.svg);
+  background-color: #000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 
 .btext-logo-image {
    
@@ -276,12 +282,10 @@
 }
 
 .btext-title {
-  margin-top: 257px;
-  margin-left: 72px;
-  font-size: 40px;
+  padding: 70px;
+ font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 100%;
 }
 
 .btext-text {
@@ -293,6 +297,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  line-height: 1.4;
+
 }
 
 .btext-text p {
